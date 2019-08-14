@@ -9,20 +9,27 @@ body {
     font-family: Arial;
   }
 
-nav{
+nav,footer{
     background-color:rgb(144, 144, 144);
     font-weight: bold;
 }
 
-nav > ul {
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+nav > ul, footer > ul {
     list-style: none;
     padding-right: 0;
     text-align: center;
   }
 
-  nav > ul > li {
+  nav > ul > li, footer > ul > li{
     display: inline-block;
   }
+
 .paz{
     padding: 0;
     display: inline;
@@ -34,7 +41,15 @@ nav > ul {
     display: block;
   }
 
-  nav > ul > li > a:hover {
+  footer > ul > li > a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 0 20px;
+  }
+
+  nav > ul > li > a:hover, footer > ul > li > a:hover {
     text-decoration: underline;
     color: blue;
   }
+
