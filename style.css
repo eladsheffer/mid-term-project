@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+  }
+
+body {
+    direction: rtl;
+    text-align: right;
+    margin: 0;
+    font-family: Arial;
+  }
+
+nav{
+    background-color:rgb(144, 144, 144);
+    font-weight: bold;
+}
+
+nav > ul {
+    list-style: none;
+    padding-right: 0;
+    text-align: center;
+  }
+
+  nav > ul > li {
+    display: inline-block;
+  }
+.paz{
+    padding: 0;
+    display: inline;
+}
+  nav > ul > li > a {
+    text-decoration: none;
+    color: white;
+    padding: 80px 20px 10px;
+    display: block;
+  }
+
+  nav > ul > li > a:hover {
+    text-decoration: underline;
+    color: blue;
+  }
