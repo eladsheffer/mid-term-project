@@ -10,7 +10,7 @@
     <script src="script.js"></script>
 </head>
 
-<body onload="changeImg();">
+<body>
     <header>
         <div class="container">
             <div class="search">
@@ -97,65 +97,76 @@
         </nav>
     </header>
     <main class="container">
-        <div class="row">
-            <div class="col">
-                <img src="../images/1908364606615453350.JPG" alt="">
-                <div class="text">
-                    <h3>קמעונאות ומסחר</h3>
-                    <p>
-                        במסגרת חטיבת הקו"מ של פז מתבצעת הפעילות הקמעונאית, הנדל"נית, והשיווקית של הקבוצה, שמתאפיינת
-                        בחדשנות, יעילות ומובילות. החטיבה פועלת...
-                    </p>
-                    <a href="javascript:void(0)">קרא עוד<img src="../images/read_more_white.png" alt=""></a>
+        <form>
+            <div class="row3">
+                <div class="sideMenu">
+                    <ul>
+                        <li>
+                            <a class="selected" href="contact.html">צור קשר</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col3">
+                    <a href="index.html">עמוד הבית</a>
+                    <span>>צור קשר</span>
+
+                    <h1>צור קשר</h1>
                 </div>
             </div>
-            <div class="col">
-                <img src="../images/Picture-046410251500.jpg" alt="">
-                <div class="text">
-                    <h3>זיקוק</h3>
-                    <p>
-                        פז זיקוק אשדוד (פז"א) היא חטיבת הזיקוק של קבוצת פז. החטיבה עוסקת בניהול פעילות בית הזיקוק
-                        באשדוד, הכוללת ייצור תזקיקי נפט...
-                    </p>
-                    <a class="raw" href="javascript:void(0)">קרא עוד<img src="../images/read_more_white.png" alt=""></a>
+            <div class="row3">
+                <fieldset class="col3">
+                    <h4>צור קשר</h4>
+                    <div class="subtitle">
+                        ליצירת קשר עם קשרי לקוחות אנא מלאו את הפרטים הבאים ואנו נשמח לעמוד לרשותכם :
+                    </div>
+                    <div>
+                        * השדות המסומנים בכוכבית (*) הינם שדות חובה
+                    </div>
+                    <div>
+                        <label for="fname">* שם פרטי</label>
+                        <input type="text" required>
+                    </div>
+                    <div>
+                        <label for="lname">* שם משפחה</label>
+                        <input type="text" required>
+                    </div>
+                    <div>
+                        <label for="phone">* טלפון</label>
+                        <input type="text" required>
+                    </div>
+                    <div>
+                        <label for="email">* E-mail</label>
+                        <input type="email" required>
+                    </div>
+                    <div>
+                        <textarea name="text" id="" cols="25" rows="6" placeholder="תוכן הפנייה"></textarea>
+                    </div>
+                    <div class="button">
+                        <a href="javascript:void(0)">שלח</a>
+                    </div>
+                </fieldset>
+                <div class="col3">
+                    <fieldset class="small">
+                        <h4>פרטי יצירת קשר</h4>
+                        <div class="subtitle">פז חברת נפט בע"מ</div>
+                        <div>יורו פארק, בניין הולנד</div>
+                        <div>קיבוץ יקום 60972</div>
+                        <div>טל. שירות לקוחות 1-800-774-774</div>
+                        <div>פקס 09-8641714</div>
+                    </fieldset>
+
+                    <fieldset class="small">
+                        <h4>עוד בפז</h4>
+                        <div class="subtitle">ליצירת קשר עם דוברות פז</div>
+                        <a href="">לחצו כאן>></a>
+                        <div class="subtitle">ליצירת קשר עם מנהלת קשרי משקיעים</div>
+                        <a href="">לחצו כאן>></a>
+                        <div class="subtitle">רוצים לעבוד בפז?</div>
+                        <a href="">לחצו כאן>></a>
+                    </fieldset>
                 </div>
             </div>
-            <div class="col">
-                <img src="../images/פזקר_-291_354410564000.jpg" alt="">
-                <div class="text">
-                    <h3>תעשיות ושירותים</h3>
-                    <p>
-                        תחת חטיבת התעשיות והשירותים של פז פועלות מספר חברות בנות, המתמחות בפיתוח, ייצור ושיווק מוצרי
-                        לוואי של נפט, ומובילות את השוק...
-                    </p>
-                    <a href="javascript:void(0)">קרא עוד<img src="../images/read_more_white.png" alt=""></a>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col">
-                <h3>כרטיס אשראי שופרסל וכרטיס אשראי יש</h3>
-                <img class="img" src="../images/paz_250x110059890678.jpg" alt="">
-                <a href="javascript:void(0)">לפרטים נוספים<img src="../images/read_more_yellow.png" alt=""></a>
-            </div>
-            <div class="col">
-                <h3>yellow click&pick</h3>
-                <img class="img" id="img" src="" alt="">
-                <a href="javascript:void(0)">לפרטים נוספים<img src="../images/read_more_yellow.png" alt=""></a>
-            </div>
-            <div class="col">
-                <h3>התחנות שלנו בדרך שלך</h3>
-                <div class="row">
-                <div class="col2">
-                    <a href="javascript:void(0)">צפון<img src="../images/read_more_yellow.png" alt=""></a>
-                    <a href="javascript:void(0)">מרכז<img src="../images/read_more_yellow.png" alt=""></a>
-                    <a href="javascript:void(0)">דרום<img src="../images/read_more_yellow.png" alt=""></a>
-                </div>
-                <div class="col2">
-                    <img class="map" src="../images/Untitled-3058756287.jpg" alt="">
-                </div>
-            </div>
-        </div>
+        </form>
     </main>
     <footer>
         <div class="container">
@@ -185,7 +196,7 @@
                     <a href="javascript:void(0)">מפת אתר</a>
                 </li>
                 <li>
-                    <a href="contact.html">צור קשר</a>
+                    <a href="javascript:void(0)">צור קשר</a>
                 </li>
                 <li>
                     <a href="javascript:void(0)">הודעות והליכים משפטיים</a>
