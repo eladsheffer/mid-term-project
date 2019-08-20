@@ -11,7 +11,7 @@ body {
   }
 
   header ,footer{
-    background-image: linear-gradient(to bottom, rgb(144, 144, 144) 95%, white);
+    background-image: linear-gradient(to bottom, rgb(144, 144, 144) 90%, white);
     width: 100%;
 }
 
@@ -24,19 +24,20 @@ footer{
   position: fixed;
   bottom: 0;
   width: 100%;
+  padding: 3px 0;
 }
 
   nav{
-    margin-top: -50px;
-    padding: 0;
+    margin-top: -40px;
+    padding: 0 0 10px 0;
     display: flex;
     align-items: flex-end;
+    justify-content: space-between;
   }
 
   .paz{
     position: relative;
-    top: 35px;
-    right: 30px;
+    top: 40px;
     z-index: 1;
   }
 
@@ -45,9 +46,17 @@ footer{
   margin: 0 auto;
 }
 
+footer .container{
+  display: flex;
+}
+
 .search{
   display: flex;
   justify-content: flex-end;
+}
+
+.search a, .search input{
+z-index: 1;
 }
 
 header ul, footer ul {
@@ -59,12 +68,12 @@ header ul, footer ul {
 
  header li, footer li{
     display: inline-block;
-    border-right: 2px white solid;
+    border-right: 1px white solid;
     margin: 0;
     padding: 0;
   }
 
-  header li:first-child, footer li:first-child{
+  header li:first-child, header li:nth-child(2), footer li:first-child{
     border-right: 0;
     margin: 0;
   }
@@ -80,7 +89,7 @@ header a, .dropdown-content > a{
 }
 
 header a{
-    margin: 0 11px;
+    padding: 0 12px;
     display: block;
   }
 
@@ -88,7 +97,7 @@ header a{
     text-decoration: none;
     color: white;
     display: block;
-    padding: 0 3px;
+    padding: 0 10px;
   }
 
  header a:hover, footer a:hover, .dropdown-content > a:hover {
@@ -192,6 +201,18 @@ color: white;
 display: block;
 text-align: left;
 margin: 0 10px 0 15px;
+}
+
+.text a .blue, .col a .blue{
+  display: none;
+}
+
+.text a:hover .blue, .col a:hover .blue{
+  display: inline;
+}
+
+.text a:hover .white, .col a:hover .white{
+  display: none;
 }
 
 .text a:hover{
