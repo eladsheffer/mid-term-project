@@ -12,5 +12,5 @@ function displayImg() {
 }
 
 function changeImg() {
-    setInterval(displayImg(), 1000);
+    setInterval(displayImg, 3000);
 }
